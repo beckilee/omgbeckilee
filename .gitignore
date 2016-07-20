@@ -1,0 +1,12 @@
+# Atom stuff
+atom.xml
+/_site/atom.xml
+
+# Mac stuff
+.DS_Store
+
+#Emacs stuff
+*.#*
+
+# s3_website stuff
+s3_website.yml
