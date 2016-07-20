@@ -1,0 +1,397 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+hr.prod {
+	border-top: 4px double #f4bf75;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.prod:after {
+	content: '\002714';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #f4bf75;
+	font-size: 18px;
+        margin-top: 0px;
+}
+
+hr.books {
+	border-top: 4px double #6a9fb5;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.books:after {
+	content: '\00270E';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #6a9fb5;
+	font-size: 18px;
+}
+
+hr.music {
+	border-top: 4px double #90a959;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.music:after {
+	content: '\00266B';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #90a959;
+	font-size: 18px;
+}
+
+hr.fem {
+	border-top: 4px double #aa759f;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.fem:after {
+	content: '\002640';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #aa759f;
+	font-size: 18px;
+}
+
+hr.misc {
+	border-top: 4px double #aa759f;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.misc:after {
+	content: '\002605';
+	display: inline-block;
+	position: relative;
+	top: -18px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #aa759f;
+	font-size: 18px;
+}
+
+hr.life {
+	border-top: 4px double #ac4142;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.life:after {
+	content: '\002665';
+        margin: 0px;
+	display: inline-block;
+	position: relative;
+	top: -18px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #ac4142;
+	font-size: 18px;
+}
+hr.nerd {
+	border-top: 4px double #75b5aa;
+	text-align: center;
+	text-align: center;
+        border-bottom: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+        margin: 0px;
+        padding: 0px;
+}
+hr.nerd:after {
+	content: '\01D6D1';
+	display: inline-block;
+	position: relative;
+	top: -18px;
+	padding: 0 10px;
+	background: #ffffff;
+	color: #75b5aa;
+	font-size: 18px;
+}
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red - Life */
+.life .sidebar {
+  background-color: #ac4142;
+}
+.life .content a,
+.life .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.orange .sidebar {
+  background-color: #d28445;
+}
+.orange .content a,
+.orange .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green - Music */
+.music .sidebar {
+  background-color: #90a959;
+}
+.music .content a,
+.music .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue - Book */
+.books .sidebar {
+  background-color: #6a9fb5;
+}
+.books .content a,
+.books .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta - Other */
+.misc .sidebar {
+  background-color: #aa759f;
+}
+.misc .content a,
+.misc .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}

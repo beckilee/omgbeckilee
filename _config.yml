@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            OMG BECKI LEE
+tagline:          'omgbeckilee.com'
+description:      'Technical writer and nerd with a penchant for the absurd. <a href="https://twitter.com/omgbeckilee" target="_blank">@omgbeckilee</a>'
+url:              http://www.omgbeckilee.com
+baseurl:          /
+
+twitter_username: omgbeckilee
+
+author:
+  name:           'Becki Lee'
+  url:            https://twitter.com/omgbeckilee
+
+paginate:         5
+gems:		  [jekyll-paginate, jekyll-gist, jekyll-tagging-related_posts]
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde

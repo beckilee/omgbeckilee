@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date: "%B %-d, %Y" }} /{% for tag in page.tags %}/ <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a> {% endfor %}</span>
+  {{ content }}
+
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h3>Related Posts</h3>
+  <ul>
+  {% for related_post in site.related_posts limit: 5 %}
+    <li><a href="{{ related_post.url }}">{{ related_post.title }}</a> - {{ related_post.date | date: "%m/%d/%Y" }}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<p style="text-align: center"><a href="http://www.omgbeckilee.com" style="font-size: 30px; position: relative; top: 2px">&#x2302;</a> | <a href="mailto:becki.lee@gmail.com" style="font-size: 30px; position: relative; top: 5px"> &#x2709;</a> | <a href="http://www.twitter.com/omgbeckilee">@</a></p>
+
