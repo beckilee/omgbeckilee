@@ -10,3 +10,6 @@ atom.xml
 
 # s3_website stuff
 s3_website.yml
+
+# drafts folder
+/_drafts/*
