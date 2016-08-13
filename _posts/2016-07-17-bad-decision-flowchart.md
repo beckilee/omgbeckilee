@@ -3,6 +3,7 @@ layout: post
 title: Bad Decision Flowchart
 excerpt_separator: <!--more-->
 date: 2016-07-17 20:18:00 -0400
+comments: true
 tags: misc
 ---
 <hr class="misc">

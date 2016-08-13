@@ -2,6 +2,7 @@
 layout: post
 title: "PLAYLIST: Songs Mentioning Cherry Cola"
 excerpt_separator: <!--more-->
+comments: true
 tags: music playlists
 ---
 <hr class="music">

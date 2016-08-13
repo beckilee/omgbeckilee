@@ -3,6 +3,7 @@ layout: post
 title: The best motivational quotes of 1997 
 date: 2016-07-12 20:38:14 -0400
 tags: music
+comments: true
 excerpt_separator: <!--more-->
 ---
 <hr class="music">

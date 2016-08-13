@@ -3,6 +3,7 @@ layout: post
 title: "REVIEW: 'Adulting' by Kelly Williams Brown"
 date: 2016-07-19 18:45:00 -0400
 excerpt_separator: <!--more-->
+comments: true
 tags: books
 ---
 <hr class="books">
