@@ -11,6 +11,8 @@ tagline:          'omgbeckilee.com'
 description:      'Technical writer/nerd with a penchant for the absurd. <a href="https://twitter.com/omgbeckilee" target="_blank">@omgbeckilee</a>'
 url:              http://www.omgbeckilee.com
 baseurl:          /
+disqus_id: omgbeckilee
+org_site: omgbeckilee.com
 
 twitter_username: omgbeckilee
 
